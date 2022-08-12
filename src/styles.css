@@ -1,0 +1,79 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app__background {
+  width: 100vw;
+  /* height: 800px; */
+  height: 100vh;
+  max-height: 100vh;
+  background-image: url('./img/banner.jpg');
+  background-position: center;
+}
+
+.app__background>div {
+  display: flex;
+  flex-direction: column;
+  max-width: 36vw;
+  margin-left: 2rem;
+  padding-top: 5rem;
+}
+
+img.app__poster{
+  max-width: 36rem;
+}
+
+p.app__poster-resume{
+  color: #FFF;
+  margin-top: 1rem;
+}
+
+.app__poster-buttons{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.app__poster-buttons>button{
+  padding: .5rem 1.2rem;
+  border: 0;
+  border-radius: .3rem;
+  font-weight: bold;
+  background-color: #00000055;
+  color: #FFF;
+  transition: .3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app__poster-buttons button:hover{
+  filter: brightness(.9);
+}
+.app__poster-buttons>button + button{
+  margin-left: 1rem;
+}
+.app__poster-buttons>button>svg{
+  margin: auto 0;
+}
+
+.app__poster-buttons>button>span{
+  line-height: 2rem;
+  margin-left: .5rem;
+}
+
+button.app__poster-btn-primary{
+  background: #e5e5e5;
+  color: #202020;
+}
